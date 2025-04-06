@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-jQuery</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jsFiles/jquery3.7.1.js"></script>
+</head>
+<body class="d-grid">
+    <!-- Sidebar Form -->
+    <aside class="d-grid">
+        <!-- Logo Container -->
+        <figure>
+            <img src="images/dashboard_logo.svg" alt="logo-dashboard">
+         </figure>
+
+        <form action="">            
+             <!-- Container for inputs and submit button -->
+            <div class="input-container">
+                <!-- Student ID -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><img src="images/id_icon.svg" alt="id_icon"></span>
+                    <input type="number" class="form-control" placeholder="Student ID" aria-label="Username" aria-describedby="basic-addon1" id="student-id">
+                </div>
+
+                <!-- Student Name -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="student-name">
+                </div>
+
+                <!-- Contact no. -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><img src="images/contact_no.svg" alt="contact_icon"></span>
+                    <input type="number" class="form-control" placeholder="Contact number." aria-label="Username" aria-describedby="basic-addon1" id="student-contact-no">
+                </div>
+
+                <!-- Address -->
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><img src="images/address.svg" alt="address-icon"></span>
+                    <input type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1" id="student-address">
+                </div>
+
+                <!-- Submit button -->
+                <button id="submit-btn" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </aside>
+
+    <!-- Table Display -->
+    <main>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Student ID</th>
+                <th scope="col">Full name</th>
+                <th scope="col">Contact number</th>
+                <th scope="col">Address</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="jsFiles/script.js"></script>
+</body>
+</html>
